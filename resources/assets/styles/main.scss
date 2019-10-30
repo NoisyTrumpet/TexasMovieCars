@@ -3,6 +3,12 @@
 /** Import everything from autoload */
 @import "./autoload/**/*";
 
+/** Nav Styles */
+@import "./common/navStyles";
+
+/** Font Face Styles */
+@import "./common/fonts";
+
 /**
  * Import npm dependencies
  *

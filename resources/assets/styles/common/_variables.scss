@@ -1,10 +1,105 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
-$theme-colors: (
-  primary: #525ddc
-);
+$theme-colors: (primary: #525ddc);
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+/** Viewport Breakpoints **/
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// TxMovieCar Blue
+$blue: #4dade9;
+// TxMovieCar Red
+$red: #d93731;
+// Left to Right Gradient
+$leftToRightGradient: linear-gradient(to right, #000, #191919, #2c2c2c, #3f3f3f, #545454);
+
+// Diagonal Gradient
+$diagonalGradient: linear-gradient(to right bottom, #000, #191919, #2c2c2c, #3f3f3f, #545454);
+
+// American Captain Font
+.americanCaptain {
+  font-family: "American Captain", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Small devices
+@mixin min-sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin min-md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin min-lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin min-xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin max-rwd($screen) {
+  @media (max-width: $screen+"px") {
+    @content;
+  }
+}
+
+// Small devices
+@mixin max-sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin max-md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin max-lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin max-xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin max-rwd($screen) {
+  @media (max-width: $screen+"px") {
+    @content;
+  }
+}
