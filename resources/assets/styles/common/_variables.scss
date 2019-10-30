@@ -1,7 +1,33 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
+@import url(//db.onlinewebfonts.com/c/a6bec1c4ef2d2fd1bac5a6951f5f32a3?family=American+Captain);
 
 $theme-colors: (primary: #525ddc);
+
+$texas-cars-colors: (
+  blue: #4DADE9
+  red: #D93731
+  black: #000000
+  white: #FFFFFF
+);
+
+//left to right gradient
+$linear-gradient: (
+  background-image: linear-gradient(to right, #000000, #191919, #2c2c2c, #3f3f3f, #545454)
+);
+
+//top right corner to bottom left corner gradient
+$diagonal-gradient: (
+  background-image: linear-gradient(to right bottom, #000000, #191919, #2c2c2c, #3f3f3f, #545454)
+);
+
+$heading-font: (
+  font: "American Captain", sans-serif
+);
+
+$standard-font: (
+  font: "Helvetica Neue", sans-serif
+);
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
