@@ -6,6 +6,15 @@
 /** Nav Styles */
 @import "./common/navStyles";
 
+/** Hero Styles */
+@import "./common/heroStyles";
+
+/** Home Content Styles */
+@import "./common/homeContentStyles";
+
+/** Footer Styles */
+@import "./common/footer";
+
 /** Font Face Styles */
 @import "./common/fonts";
 
@@ -29,4 +38,3 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-

@@ -20,5 +20,18 @@ const routes = new Router({
   aboutUs,
 });
 
+// Fontawesome Icons
+// import then needed Font Awesome functionality
+import { config, library, dom } from '@fortawesome/fontawesome-svg-core';
+import { faCar, faBars } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faCar, faBars);
+config.searchPseudoElements = true;
+
+dom.watch();
+
+// Home Hero JS
+
+
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());

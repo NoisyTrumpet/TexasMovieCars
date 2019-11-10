@@ -8,6 +8,8 @@ $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
 
 /** Viewport Breakpoints **/
+// Small Phones
+$screen-xs-min: 350px;
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
 // Small tablets (portrait view)
@@ -25,13 +27,20 @@ $red: #d93731;
 $leftToRightGradient: linear-gradient(to right, #000, #191919, #2c2c2c, #3f3f3f, #545454);
 
 // Diagonal Gradient
-$diagonalGradient: linear-gradient(to right bottom, #000, #191919, #2c2c2c, #3f3f3f, #545454);
+$diagonalGradient: linear-gradient(to bottom right, #000, #191919, #2c2c2c, #3f3f3f, #545454);
 
 // American Captain Font
 .americanCaptain {
   font-family: "American Captain", sans-serif;
   font-weight: normal;
   font-style: normal;
+}
+
+// Extra Small Devices
+@mixin min-xs {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
 }
 
 // Small devices
@@ -65,6 +74,13 @@ $diagonalGradient: linear-gradient(to right bottom, #000, #191919, #2c2c2c, #3f3
 // Custom devices
 @mixin max-rwd($screen) {
   @media (max-width: $screen+"px") {
+    @content;
+  }
+}
+
+// Extra Small Devices
+@mixin max-xs {
+  @media (max-width: #{$screen-xs-min}) {
     @content;
   }
 }

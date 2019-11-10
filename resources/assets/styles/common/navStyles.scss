@@ -1,13 +1,117 @@
-.navLogo {
-  max-width: 500px;
+nav .navLogo {
+  width: 500px;
+  max-width: 95%;
+
+  // Tablet
+  @include max-rwd(1366) {
+    width: 400px;
+  }
+
+  // Tablet
+  @include max-rwd(1115) {
+    width: 300px;
+  }
+
+  // Mobile
+  @include max-lg {
+    width: 300px;
+  }
+
+  // Mobile Smaller
+  @include max-sm {
+    width: 250px;
+  }
+
+  // Mobile Extra Small
+  @include max-xs {
+    width: 200px;
+  }
+}
+
+nav .navBarPhoneContainer {
+  display: block;
+
+  // Paragraph Text
+  p {
+    color: $blue;
+
+    // Mobile Styles
+    @include max-lg {
+      text-align: center;
+    }
+
+    @include max-rwd(1115) {
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+
+    // Phone
+    @include max-rwd(500) {
+      font-size: 1rem;
+    }
+  }
+
+  // Link
+  a {
+    color: $blue;
+    font-weight: bold;
+  }
 }
 
 .navbar {
   background: $leftToRightGradient;
+  border-bottom: 8px solid $red;
 }
 
-.nav-link {
+nav .nav-link {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
+
+  // Tablet
+  @include max-rwd(1366) {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  // Tablet
+  @include max-rwd(1115) {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  // Phone
+  @include max-rwd(500) {
+    font-size: 1.75rem;
+    padding: 0.75rem;
+  }
 }
 
+nav .navBars svg {
+  color: white;
+  fill: white !important;
+}
+
+nav .nav {
+
+  // Mobile Styles
+  @include max-lg {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  // Link Hover
+  a:hover {
+    color: $red;
+  }
+
+  // Last Link
+  li:last-of-type {
+    background-color: #000;
+    border-radius: 10px;
+
+    // Link Color
+    a {
+      color: $red;
+    }
+  }
+}

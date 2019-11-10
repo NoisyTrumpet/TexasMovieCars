@@ -1,0 +1,50 @@
+.jumbotron {
+  color: white;
+  background-image: url("../images/heroBG.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  border-radius: 0 !important;
+  margin-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include max-md {
+    height: 50vh;
+  }
+
+  // Main Headline
+  h4 {
+    font-family: "American Captain", serif;
+
+    // Mobile alignment
+    @include max-md {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    @include max-sm {
+      font-size: 2.7rem;
+    }
+
+    @include max-xs {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+// Lightning McQueen Image
+.carHero {
+  display: flex;
+  position: relative;
+  max-width: 97%;
+  height: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: flex-end;
+  align-self: middle;
+  align-items: bottom;
+}

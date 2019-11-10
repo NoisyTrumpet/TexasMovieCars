@@ -37,8 +37,8 @@ class App extends Controller {
 			'theme_location' => 'primary_navigation',
 			'depth' => 2,
 			'container' => 'div',
-			'container_class' => 'collapse navbar-collapse justify-content-end',
-			'menu_class' => 'nav navbar-collapse americanCaptain align-items-end',
+			'container_class' => 'collapse navbar-collapse justify-content-end align-items-end',
+			'menu_class' => 'nav navbar-collapse americanCaptain',
 			'walker' => new \App\wp_bootstrap4_navwalker(),
 
 		);

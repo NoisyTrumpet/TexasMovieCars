@@ -1,0 +1,109 @@
+.footerCTAWrapper {
+  background-color: $red;
+  padding: 2rem 2rem;
+
+  h3 {
+    color: white;
+    font-family: "American Captain", serif;
+    text-align: center;
+    font-size: 2.5rem;
+
+    a {
+      color: white;
+    }
+  }
+
+  .phoneIcon {
+    width: 51px;
+    height: 51px;
+  }
+
+  @include max-rwd(1209) {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  @include max-rwd(990) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include max-rwd(777) {
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.footerMenuWrapper {
+  background-color: #111;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  img.footerLogo {
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+
+  .footerAbout {
+    color: white;
+    padding: 1rem;
+  }
+
+  .footerNav {
+    padding: 1rem;
+
+    h4 {
+      color: $blue;
+      font-family: "American Captain", serif;
+    }
+
+    .footerMenu {
+      ul {
+        display: block;
+        columns: 2 !important;
+        list-style: none;
+        text-align: left;
+        font-size: 1.5rem;
+
+        li a {
+          color: white;
+
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+
+  .footerInfoWrapper {
+    padding: 1rem;
+
+    h3 {
+      color: $blue;
+      font-family: "American Captain", serif;
+    }
+
+    p {
+      color: white;
+    }
+
+    .infoLink {
+      color: $red;
+    }
+  }
+
+  .infoCol {
+    .infoLink {
+      color: $red;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
