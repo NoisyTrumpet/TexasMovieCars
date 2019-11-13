@@ -1,0 +1,117 @@
+.jumbotronCarPost {
+  height: 70vh !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 !important;
+  margin-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  // Main Headline
+  h1 {
+    color: white;
+    font-family: "American Captain", serif;
+
+    // Mobile alignment
+    @include max-md {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    @include max-sm {
+      font-size: 2.7rem;
+    }
+
+    @include max-xs {
+      font-size: 2.3rem;
+    }
+  }
+
+  @include max-sm {
+    height: 50vh !important;
+  }
+}
+
+.post-40 .jumbotronCarPost,
+.post-37 .jumbotronCarPost,
+.post-41 .jumbotronCarPost {
+  h1 {
+    color: $red !important;
+  }
+}
+
+.post-33 .jumbotronCarPost {
+  h1 {
+    @include max-sm {
+      margin-top: 4rem;
+    }
+  }
+}
+
+// Post Body Styles
+.carPostWrapper {
+  padding-top: 3rem;
+
+  .carPostDescriptionWrapper {
+    h2 {
+      color: $blue;
+      font-family: "American Captain", serif;
+    }
+
+    h4 {
+      color: white;
+    }
+
+    img.threeQuarter {
+      display: block;
+      margin: 2rem auto;
+      max-width: 99%;
+    }
+
+    img.front {
+      display: block;
+      margin: 2rem auto;
+      max-width: 75%;
+    }
+  }
+
+  .carPostFormWrapper {
+    .gform_title {
+      color: $blue;
+      font-family: "American Captain", serif;
+      font-size: 2rem;
+    }
+
+    .gfield_label {
+      color: white;
+    }
+
+    .name span.name_first,
+    .name span.name_last {
+      color: $blue !important;
+    }
+
+    .gfield_required {
+      color: $blue;
+    }
+
+    input.button {
+      font-family: "American Captain", serif;
+      color: white;
+      background: $red;
+      font-size: 1.8rem !important;
+      border: white 3px solid;
+      padding: 1rem auto;
+      width: 100% !important;
+      transition: 0.5s ease;
+
+      &:hover {
+        color: $red;
+        background: white;
+        border: $red 3px solid;
+        transition: 0.5s ease;
+      }
+    }
+  }
+}

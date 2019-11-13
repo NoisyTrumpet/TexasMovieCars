@@ -16,6 +16,10 @@
   .phoneIcon {
     width: 51px;
     height: 51px;
+
+    @include max-sm {
+      transform: scale(0.7);
+    }
   }
 
   @include max-rwd(1209) {
@@ -71,6 +75,10 @@
 
         li a {
           color: white;
+
+          @include max-xs {
+            font-size: 1rem;
+          }
 
           &:hover {
             color: $red;

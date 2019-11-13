@@ -34,6 +34,8 @@ nav .navBarPhoneContainer {
   // Paragraph Text
   p {
     color: $blue;
+    font-family: "American Captain", serif;
+    font-size: 2rem;
 
     // Mobile Styles
     @include max-lg {
@@ -47,13 +49,13 @@ nav .navBarPhoneContainer {
 
     // Phone
     @include max-rwd(500) {
-      font-size: 1rem;
+      font-size: 2rem;
     }
   }
 
   // Link
   a {
-    color: $blue;
+    color: $red;
     font-weight: bold;
   }
 }
@@ -69,19 +71,19 @@ nav .nav-link {
 
   // Tablet
   @include max-rwd(1366) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.5rem;
   }
 
   // Tablet
   @include max-rwd(1115) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.5rem;
   }
 
   // Phone
   @include max-rwd(500) {
-    font-size: 1.75rem;
+    font-size: 2rem;
     padding: 0.75rem;
   }
 }
@@ -102,16 +104,30 @@ nav .nav {
   // Link Hover
   a:hover {
     color: $red;
+    transition: 0.5s ease;
   }
 
   // Last Link
   li:last-of-type {
     background-color: #000;
     border-radius: 10px;
+    transition: 0.5s ease;
+
+    &:hover {
+      background-color: $red;
+      transition: 0.5s ease;
+      transform: scale(1.1);
+    }
 
     // Link Color
     a {
       color: $red;
+      transition: 0.5s ease;
+
+      &:hover {
+        color: white;
+        transition: 0.5s ease;
+      }
     }
   }
 }

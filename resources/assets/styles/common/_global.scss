@@ -3,3 +3,73 @@ a.nav-link {
   font-weight: normal;
   font-style: normal;
 }
+
+.contactWrapper,
+.bookWrapper {
+  .gform_title {
+    color: $blue;
+    font-family: "American Captain", serif;
+    font-size: 2rem !important;
+  }
+
+  .gfield_label {
+    color: white;
+  }
+
+  span.name_first,
+  span.name_last {
+    color: $blue !important;
+  }
+
+  .gfield_required {
+    color: $blue !important;
+  }
+
+  input.button {
+    font-family: "American Captain", serif;
+    color: white;
+    background: $red;
+    font-size: 1.8rem !important;
+    border: white 3px solid;
+    padding: 1rem auto;
+    width: 100% !important;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $red;
+      background: white;
+      border: $red 3px solid;
+      transition: 0.5s ease;
+    }
+  }
+}
+
+.aboutWrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .aboutCopyWrapper {
+    padding: 1rem;
+
+    h1 {
+      color: $blue;
+      font-family: "American Captain", serif;
+
+      @include max-sm {
+        font-size: 2rem !important;
+      }
+    }
+
+    color: white;
+  }
+
+  .aboutPicWrapper {
+    padding: 1rem;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+}

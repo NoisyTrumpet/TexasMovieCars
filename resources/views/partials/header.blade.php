@@ -10,7 +10,7 @@
       {!! wp_nav_menu($primarymenu) !!}
     @endif
     <div class="navBarPhoneContainer">
-     <p>To book a car, call us at <a href="tel:1.210.490.2554">1 (210) 490-2554</a></p>
+     <p>Call <a href="tel:1.210.490.2554"> 1 (210) 490-2554</a></p>
     </div>
   </div>
 </nav>

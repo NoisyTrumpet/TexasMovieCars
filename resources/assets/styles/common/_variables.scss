@@ -36,6 +36,10 @@ $diagonalGradient: linear-gradient(to bottom right, #000, #191919, #2c2c2c, #3f3
   font-style: normal;
 }
 
+.blackBackground {
+  background: $diagonalGradient;
+}
+
 // Extra Small Devices
 @mixin min-xs {
   @media (min-width: #{$screen-xs-min}) {
