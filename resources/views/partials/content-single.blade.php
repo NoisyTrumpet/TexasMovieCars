@@ -7,8 +7,8 @@
     				<div class="carPostDescriptionWrapper">
     					<h2>@title</h2>
     					<h4>@field('description')</h4>
-    					<img class="front" src="/app/themes/TexasMovieCars/dist/images/front/@field('front_image')">
-    					<img class="threeQuarter" src="/app/themes/TexasMovieCars/dist/images/threeQuarter/@field('threequarter')">
+    					<img class="front" src="/app/themes/TexasMovieCars/resources/assets/images/Front/@field('front_image')">
+    					<img class="threeQuarter" src="/app/themes/TexasMovieCars/resources/assets/images/ThreeQuarter/@field('threequarter')">
     				</div>
     			</div>
     			<div class="col-xs-12 col-sm-12 col-md-7">

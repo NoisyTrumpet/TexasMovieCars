@@ -33,11 +33,27 @@
   }
 }
 
-.post-40 .jumbotronCarPost,
-.post-37 .jumbotronCarPost,
-.post-41 .jumbotronCarPost {
-  h1 {
-    color: $red !important;
+.ww2-jeep .jumbotronCarPost .carHero {
+  @include min-lg {
+    max-width: 50%;
+  }
+}
+
+.good-humor-ice-cream-truck .jumbotronCarPost .carHero {
+  @include min-lg {
+    max-width: 75%;
+  }
+}
+
+.star-wars-land-speeder,
+.herbie-the-beatle,
+.ww2-jeep,
+.black-beauty,
+.batmobile-66 {
+  .jumbotronCarPost {
+    h1 {
+      color: $red !important;
+    }
   }
 }
 
